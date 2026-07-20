@@ -11,7 +11,7 @@ import {
 
 
 import api from "../api/axios";
-import "../styles/chatBox.css";
+import "../styles/ChatBox.css";
 
 
 
