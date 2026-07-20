@@ -1,0 +1,21 @@
+.layout{
+
+    min-height:calc(100vh - 160px);
+
+    padding:40px 0;
+
+}
+
+
+
+.container{
+
+    width:100%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:0 24px;
+
+}

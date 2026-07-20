@@ -1,0 +1,95 @@
+.notificacion{
+
+    position:fixed;
+
+    top:25px;
+
+    right:25px;
+
+    min-width:300px;
+
+    padding:16px 20px;
+
+    border-radius:15px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+    z-index:9999;
+
+    animation:entrada .3s ease;
+
+}
+
+
+
+.notificacion p{
+
+    margin:0;
+
+    flex:1;
+
+    font-weight:600;
+
+}
+
+
+
+.notificacion button{
+
+    border:none;
+
+    background:none;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+}
+
+
+
+.success{
+
+    background:#ecfdf5;
+
+    color:#065f46;
+
+}
+
+
+
+.error{
+
+    background:#fee2e2;
+
+    color:#991b1b;
+
+}
+
+
+
+@keyframes entrada{
+
+    from{
+
+        transform:translateY(-20px);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:translateY(0);
+
+        opacity:1;
+
+    }
+
+}

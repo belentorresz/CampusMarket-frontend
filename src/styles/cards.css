@@ -1,0 +1,79 @@
+.producto-card{
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    transition: .3s;
+    /* AGREGADO: Tipografía geométrica y limpia como la de tu imagen */
+    font-family: 'Plus Jakarta Sans', 'Inter', 'Segoe UI', system-ui, sans-serif;
+}
+
+.producto-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.12);
+}
+
+.producto-imagen{
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.producto-imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.producto-info{
+    padding: 20px;
+}
+
+.producto-info h3{
+    margin-bottom: 10px;
+    /* AJUSTADO: Un tono gris muy oscuro y peso idéntico al de tu captura */
+    color: #1e2530;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -0.02em; /* Hace que las letras redondas se junten bonito */
+}
+
+/* MANTENIDO: El azul verdoso que te gustó */
+.precio{
+    font-size: 22px;
+    font-weight: 700;
+    color: #0d6163; 
+    letter-spacing: -0.01em;
+}
+
+/* MANTENIDO: Tu color verde del badge */
+.estado{
+    display: inline-block;
+    background: #256470; 
+    color: #ffffff; 
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin: 10px 0;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* MANTENIDO: El botón gris sutil */
+.btn-ver{
+    display: block;
+    text-align: center;
+    background: #f1f5f9; 
+    color: #475569; 
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background .2s;
+}
+
+.btn-ver:hover {
+    background: #e2e8f0;
+    color: #1e293b;
+}

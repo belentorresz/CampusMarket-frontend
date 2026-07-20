@@ -1,0 +1,266 @@
+.checkout-page{
+
+    max-width:1200px;
+
+    margin:40px auto;
+
+    padding:0 20px;
+
+}
+
+
+
+.checkout-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:30px;
+
+    align-items:start;
+
+}
+
+
+
+.checkout-left,
+.checkout-right{
+
+    background:var(--surface);
+
+    border-radius:18px;
+
+    padding:30px;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+
+.checkout-left h1{
+
+    font-size:34px;
+
+    color:var(--title);
+
+    margin-bottom:8px;
+
+}
+
+
+
+.checkout-left p{
+
+    color:#64748b;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.payment-tabs{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.tab{
+
+    flex:1;
+
+    height:50px;
+
+    border:1px solid var(--border);
+
+    background:white;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+
+
+.tab:hover{
+
+    border-color:var(--primary);
+
+}
+
+
+
+.tab.active{
+
+    background:var(--primary);
+
+    color:white;
+
+    border-color:var(--primary);
+
+}
+
+
+
+.checkout-field{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    margin-bottom:22px;
+
+}
+
+
+
+.checkout-field label{
+
+    font-weight:600;
+
+    color:var(--title);
+
+}
+
+
+
+.copy-row{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+
+
+.copy-row input{
+
+    flex:1;
+
+}
+
+
+
+.checkout-info{
+
+    background:#f8fafc;
+
+    border-left:4px solid var(--primary);
+
+    padding:18px;
+
+    border-radius:12px;
+
+    color:#475569;
+
+    margin-top:10px;
+
+}
+
+
+
+.checkout-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    padding:25px;
+
+    border:1px dashed var(--border);
+
+    border-radius:16px;
+
+    background:#f8fafc;
+
+}
+
+
+
+.summary-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+
+
+.summary-card h2{
+
+    color:var(--title);
+
+}
+
+
+
+.summary-card h3{
+
+    color:var(--title);
+
+    font-size:22px;
+
+}
+
+
+
+.summary-card p{
+
+    margin:0;
+
+    color:#64748b;
+
+}
+
+
+
+.summary-card h1{
+
+    font-size:42px;
+
+    color:var(--primary);
+
+    margin:8px 0 20px;
+
+}
+
+
+
+.summary-card .btn-primary{
+
+    width:100%;
+
+}
+
+
+
+@media(max-width:900px){
+
+.checkout-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}

@@ -1,0 +1,180 @@
+.navbar{
+    background:#daeded;
+
+    backdrop-filter:blur(12px);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+
+
+.navbar-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:18px 20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:28px;
+
+    font-weight:800;
+
+    color:var(--title);
+
+}
+
+
+
+.logo-icon{
+
+    width:16px;
+
+    height:16px;
+
+    background:var(--primary);
+
+    border-radius:4px;
+
+    transform:rotate(45deg);
+
+}
+
+
+
+.nav-links{
+
+    display:flex;
+
+    gap:28px;
+
+    align-items:center;
+
+}
+
+
+
+.nav-link{
+
+    color:var(--text);
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+
+
+.nav-link:hover{
+
+    color:var(--primary);
+
+}
+
+
+
+.usuario{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+
+.avatar{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:2px solid var(--primary);
+
+}
+
+
+
+.salir{
+
+    background:var(--button-light);
+
+    color:var(--text);
+
+    padding:10px 18px;
+
+    border-radius:12px;
+
+    transition:.25s;
+
+}
+
+
+
+.salir:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+.navbar-brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    text-decoration:none;
+
+    color:#1e2530;
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+
+.logo{
+
+    width:42px;
+
+    height:42px;
+
+    object-fit:contain;
+
+}

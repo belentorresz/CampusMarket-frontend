@@ -1,0 +1,126 @@
+.ventas-page{
+
+    padding:40px;
+
+}
+
+
+.ventas-page h1{
+
+    color:#1e2530;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.venta-card{
+
+    background:white;
+
+    border-radius:16px;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+.venta-card h2{
+
+    color:#0d6163;
+
+}
+
+
+
+.estado{
+
+    padding:7px 14px;
+
+    border-radius:20px;
+
+    color:white;
+
+    display:inline-block;
+
+}
+
+
+
+.pendiente{
+
+    background:#f59e0b;
+
+}
+
+
+.vendido{
+
+    background:#16a34a;
+
+}
+
+
+.cancelado{
+
+    background:#dc2626;
+
+}
+
+
+
+.acciones{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+
+
+.btn-aceptar{
+
+    background:#0d6163;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+
+
+.btn-cancelar{
+
+    background:#dc2626;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}

@@ -1,0 +1,429 @@
+.chats-page{
+
+    max-width:1100px;
+
+    margin:40px auto;
+
+    padding:0 25px;
+
+}
+
+
+
+.chats-header{
+
+    margin-bottom:35px;
+
+}
+
+
+
+.chats-header h1{
+
+    color:#1e2530;
+
+    font-size:32px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.chats-header p{
+
+    color:#64748b;
+
+}
+
+.ordenar-btn{
+
+    border:none;
+
+    background:none;
+
+    color:#64748b;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+}
+
+
+
+.chats-toolbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.chats-toolbar h3{
+
+    color:#1e2530;
+
+}
+
+
+
+.ordenar-btn{
+
+    background:white;
+
+    border:none;
+
+    color:#475569;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+.chat-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+
+
+
+
+.chat-card{
+
+    background:white;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:16px;
+
+    padding:24px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.04);
+
+    transition:.25s;
+
+}
+
+
+
+.chat-card:hover{
+
+    transform:translateY(-2px);
+
+}
+
+
+
+
+
+.chat-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+
+
+
+
+.chat-user h3{
+
+    margin:0;
+
+    color:#1e2530;
+
+    font-size:18px;
+
+}
+
+
+
+.chat-user span{
+
+    color:#64748b;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+.chat-info small{
+
+    color:#64748b;
+
+}
+
+
+
+.chat-info strong{
+
+    display:block;
+
+    margin:6px 0;
+
+    color:#1e2530;
+
+}
+
+
+
+.chat-info p{
+
+    margin:0;
+
+    color:#475569;
+
+}
+
+
+
+
+
+.chat-button{
+
+    min-width:150px !important;
+
+    height:45px !important;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+}
+
+.chat-open-btn{
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:10px 22px;
+
+    border-radius:14px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    transition:.25s;
+
+    white-space:nowrap;
+
+}
+
+
+.chat-open-btn:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-2px);
+
+}
+.chats-page{
+
+    max-width:1000px;
+
+    margin:40px auto;
+
+}
+
+
+
+.chats-header{
+
+    margin-bottom:40px;
+
+}
+
+
+
+.chats-header h1{
+
+    font-size:32px;
+
+    color:#1e2530;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.chats-header p{
+
+    color:#64748b;
+
+    margin:0;
+
+}
+
+
+
+.chats-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.chats-top h3{
+
+    color:#1e2530;
+
+    margin:0;
+
+}
+
+
+
+.chats-top span{
+
+    color:#64748b;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+.chat-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+
+
+
+
+.chat-card{
+
+    background:white;
+
+    border-radius:14px;
+
+    border:1px solid #e2e8f0;
+
+    padding:24px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 6px 15px rgba(0,0,0,.04);
+
+}
+
+
+
+
+
+.chat-text h3{
+
+    margin:0 0 8px 0;
+
+    color:#1e2530;
+
+}
+
+
+
+.estado-chat{
+
+    margin:0 0 8px 0;
+
+    color:#64748b;
+
+}
+
+
+
+.ultimo-chat{
+
+    margin:0;
+
+    color:#94a3b8;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+.chat-btn{
+
+    background:#0d6163;
+
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    font-size:14px;
+
+    transition:.25s;
+
+}
+
+
+
+.chat-btn:hover{
+
+    background:#256470;
+
+}

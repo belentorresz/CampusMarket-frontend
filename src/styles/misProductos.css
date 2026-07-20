@@ -1,0 +1,51 @@
+.titulo-pagina{
+
+    margin-bottom:30px;
+
+    color:#0f172a;
+
+}
+
+
+
+.acciones{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:15px;
+
+}
+
+
+
+.btn-editar{
+
+    flex:1;
+
+    background:#3f9d9a;
+
+    color:white;
+
+    padding:10px;
+
+    border-radius:8px;
+
+}
+
+
+
+.btn-eliminar{
+
+    flex:1;
+
+    background:#d26161;
+
+    color:white;
+
+    padding:10px;
+
+    border-radius:8px;
+
+}

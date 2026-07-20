@@ -1,0 +1,139 @@
+.publicar-container{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+
+
+.publicar-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.08);
+
+}
+
+
+
+.publicar-card h1{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    color:#0f172a;
+
+}
+
+
+
+.form-grupo{
+
+    margin-bottom:20px;
+
+}
+
+
+
+.form-grupo label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+
+
+.form-grupo input,
+.form-grupo textarea,
+.form-grupo select{
+
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #cbd5e1;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+
+}
+
+
+
+.form-grupo textarea{
+
+    height:120px;
+
+    resize:none;
+
+}
+
+
+
+.form-fila{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+}
+
+
+
+.btn-publicar{
+
+
+    width:100%;
+
+    background:#417d89;
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    margin-top:10px;
+
+}
+
+
+
+.btn-publicar:hover{
+
+    background:#48768d;
+
+}
+
+
+
+@media(max-width:700px){
+
+    .form-fila{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

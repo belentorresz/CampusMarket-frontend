@@ -1,0 +1,169 @@
+/* BOTÓN PRINCIPAL */
+
+.btn-primary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    padding:12px 22px;
+
+    background:var(--primary);
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.btn-primary:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-2px);
+
+}
+
+.btn-primary,
+.btn-secondary{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-width:220px;
+
+    height:52px;
+
+    border-radius:14px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    white-space:nowrap;
+
+    transition:.25s;
+
+}
+
+/* BOTÓN SECUNDARIO */
+
+.btn-secondary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:12px 22px;
+
+    background:var(--button-light);
+
+    color:var(--text);
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.btn-secondary:hover{
+
+    background:#e2e8f0;
+
+}
+
+
+
+/* BOTÓN PELIGRO */
+
+.btn-danger{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:12px 22px;
+
+    background:#ef4444;
+
+    color:white;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.btn-danger:hover{
+
+    background:#dc2626;
+
+}
+
+
+
+/* BOTÓN COMPLETO */
+
+.btn-block{
+
+    width:100%;
+
+}
+
+.btn-filter{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:8px 16px;
+
+    background:var(--button-light);
+
+    color:var(--text);
+
+    border:1px solid #e2e8f0;
+
+    border-radius:12px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+
+.btn-filter:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}

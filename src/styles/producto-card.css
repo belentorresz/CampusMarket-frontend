@@ -1,0 +1,223 @@
+.producto-card{
+
+    background:#ffffff;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    transition:.25s;
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+
+.producto-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.producto-imagen{
+
+    width:100%;
+
+    height:220px;
+
+    overflow:hidden;
+
+}
+
+
+
+.producto-imagen img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+
+.producto-info{
+
+    padding:22px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex:1;
+
+}
+
+
+
+.producto-info h3{
+
+    color:#1e2530;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    letter-spacing:-0.02em;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.descripcion{
+
+    color:#475569;
+
+    line-height:1.5;
+
+    display:-webkit-box;
+
+    -webkit-box-orient:vertical;
+
+    overflow:hidden;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.precio{
+
+    margin-top:15px;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#0d6163;
+
+}
+
+
+
+.estado{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    padding:7px 14px;
+
+    border-radius:20px;
+
+    background:#256470;
+
+    color:white;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+
+
+.btn-ver{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-top:20px;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    background:#f1f5f9;
+
+    color:#475569;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+
+
+.btn-ver:hover{
+
+    background:#e2e8f0;
+
+}
+
+.producto-imagen{
+
+    position:relative;
+
+    width:100%;
+
+    height:220px;
+
+    overflow:hidden;
+
+}
+
+.btn-favorito{
+
+    position:absolute;
+
+    top:12px;
+
+    right:12px;
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.95);
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.2s;
+
+    z-index:5;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+
+}
+
+.btn-favorito:hover{
+
+    transform:scale(1.12);
+
+}

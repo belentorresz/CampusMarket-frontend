@@ -1,0 +1,218 @@
+.compras-page{
+
+    max-width:1100px;
+
+    margin:40px auto;
+
+    padding:0 20px;
+
+}
+
+
+.compras-page h1{
+
+    font-size:34px;
+
+    color:var(--title);
+
+}
+
+
+
+.compras-subtitulo{
+
+    color:#777;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.compras-grid{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+
+.compra-card{
+
+    background:white;
+
+    border-radius:16px;
+
+    padding:20px;
+
+    display:flex;
+
+    gap:25px;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+
+.compra-card img{
+
+    width:150px;
+
+    height:120px;
+
+    border-radius:12px;
+
+    object-fit:cover;
+
+}
+
+
+
+.compra-info h2{
+
+    margin-top:0;
+
+    color:var(--title);
+
+}
+
+
+
+.compra-info p{
+
+    margin:8px 0;
+
+}
+
+
+
+.estado{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+
+
+.estado.pendiente{
+
+    background:#fff3cd;
+
+}
+
+
+
+.estado.aceptada{
+
+    background:#d1e7dd;
+
+}
+
+
+
+.estado.cancelada{
+
+    background:#f8d7da;
+
+}
+
+
+
+.sin-compras{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:16px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.compras-page h1{
+
+    font-size:34px;
+
+    color:var(--title);
+
+    letter-spacing:-0.02em;
+
+}
+
+
+
+.compras-subtitulo{
+
+    color:#777;
+
+    margin-bottom:30px;
+
+    letter-spacing:0.02em;
+
+}
+
+
+
+.compra-info h2{
+
+    margin-top:0;
+
+    color:var(--title);
+
+    letter-spacing:-0.01em;
+
+}
+
+
+
+.compra-info p{
+
+    margin:10px 0;
+
+    letter-spacing:0.02em;
+
+    color:#555;
+
+}
+
+
+
+.compra-info strong{
+
+    color:var(--title);
+
+    margin-right:6px;
+
+}
+
+
+
+.estado{
+
+    display:inline-block;
+
+    padding:7px 16px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    letter-spacing:0.03em;
+
+}

@@ -1,0 +1,429 @@
+/* CONTENEDOR PRINCIPAL */
+
+.container{
+
+    max-width:1100px;
+
+}
+
+
+
+/* TARJETA PERFIL */
+
+.perfil-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+
+
+/* TITULO */
+
+.container h1{
+
+    color:#1e2530;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+
+/* DISTRIBUCION IZQUIERDA - DERECHA */
+
+.perfil-layout{
+
+    display:grid;
+
+    grid-template-columns:1fr 300px;
+
+    gap:50px;
+
+}
+
+
+
+
+/* INFORMACION */
+
+.perfil-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+
+
+
+
+/* FOTO */
+
+.perfil-imagen{
+
+    width:150px;
+
+    height:150px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+/* SELECTOR FOTO */
+
+.foto-selector{
+
+    margin-top:10px;
+
+    color:#475569;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+
+
+.foto-selector input{
+
+    display:block;
+
+    margin-top:8px;
+
+}
+
+
+
+
+
+/* DATOS */
+
+.perfil-datos{
+
+    width:100%;
+
+    margin-top:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+.dato-item{
+
+    display:flex;
+
+    flex-direction:column;
+
+    background:#f8fafc;
+
+    padding:12px 18px;
+
+    border-radius:12px;
+
+}
+
+
+
+.dato-item span{
+
+    color:#64748b;
+
+    font-size:14px;
+
+}
+
+
+
+.dato-item strong{
+
+    color:#1e2530;
+
+    font-size:16px;
+
+    margin-top:3px;
+
+}
+
+
+
+
+
+/* MENU DERECHO */
+
+.perfil-menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    margin-top:320px;
+
+}
+
+.perfil-foto-area{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:15px;
+
+    margin-bottom:25px;
+
+}
+
+
+.perfil-option{
+
+    width:100%;
+
+    padding:16px 20px;
+
+    background:#b3d1d1;
+
+    border:none;
+
+    border-radius:14px;
+
+    color:#1e2530;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    text-align:left;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+
+.perfil-option:hover{
+
+    background:#e2e8f0;
+
+    transform:translateX(5px);
+
+}
+
+.perfil-foto-area{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.foto-botones{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:12px;
+    align-items:center;
+}
+
+.btn-subir-foto,
+.perfil-btn-primary{
+    margin:0;
+}
+
+/* BOTONES CUENTA */
+
+.perfil-account{
+
+    margin-top:35px;
+
+    padding-top:25px;
+
+    border-top:1px solid #e2e8f0;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+
+
+
+/* BOTONES EXISTENTES */
+
+.perfil-btn-primary{
+
+    background:#0d6163;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    margin-top:15px;
+
+}
+
+
+
+.perfil-btn-secondary{
+
+    background:#f1f5f9;
+
+    color:#334155;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+
+
+.perfil-btn-danger{
+
+    background:#dc2626;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+.perfil-btn-primary:hover,
+.perfil-btn-secondary:hover,
+.perfil-btn-danger:hover{
+
+    opacity:.85;
+
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:800px){
+
+
+    .perfil-layout{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .perfil-menu{
+
+        width:100%;
+
+    }
+
+
+    .perfil-account{
+
+        flex-direction:column;
+
+    }
+
+
+}
+
+.btn-subir-foto{
+
+    margin-top:10px;
+
+    background:#f1f5f9;
+
+    color:#334155;
+
+    padding:10px 18px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    display:inline-block;
+
+}
+
+
+
+.btn-subir-foto:hover{
+
+    background:#e2e8f0;
+
+}
+
+
+
+.btn-subir-foto input{
+
+    display:none;
+
+}

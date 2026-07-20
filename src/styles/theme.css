@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root{
+
+    /* Colores */
+
+    --primary:#0d6163;
+    --primary-dark:#256470;
+
+    --title:#1e2530;
+    --text:#475569;
+
+    --background:#f8fafc;
+    --surface:#ffffff;
+
+    --border:#e2e8f0;
+
+    --button-light:#f1f5f9;
+
+    --success:#3e7a89;
+
+    --danger:#c84b4b;
+
+    /* Bordes */
+
+    --radius:16px;
+
+    /* Sombras */
+
+    --shadow:
+        0 5px 20px rgba(0,0,0,.08);
+
+}
