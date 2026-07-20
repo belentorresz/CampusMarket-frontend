@@ -49,7 +49,7 @@ try{
 
 const respuesta =
 await api.post(
-"/api/auth/login",
+"auth/login",
 datos
 );
 

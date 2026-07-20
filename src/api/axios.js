@@ -3,7 +3,7 @@ import axios from "axios";
 
 const api = axios.create({
 
-    baseURL: "https://campusmarket-production-98d0.up.railway.app"
+    baseURL: "https://campusmarket-production-98d0.up.railway.app/api"
 
 });
 
