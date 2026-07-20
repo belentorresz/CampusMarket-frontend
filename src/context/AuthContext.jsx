@@ -43,6 +43,8 @@ export function AuthProvider({children}){
             await api.get("/usuarios/me");
 
 
+            console.log("USUARIO /me:", respuesta.data);
+
             localStorage.setItem(
                 "usuario",
                 JSON.stringify(respuesta.data)
