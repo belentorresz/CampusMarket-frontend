@@ -1,5 +1,5 @@
 import {useEffect,useState} from "react";
-import axios from "axios";
+import api from "../api/axios";
 import {useNavigate,useParams} from "react-router-dom";
 import "../styles/forms.css";
 import "../styles/buttons.css";

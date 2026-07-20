@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import api from "../api/axios";
 
 import "../styles/cards.css";
 import "../styles/misProductos.css";
@@ -25,7 +25,7 @@ function MisProductos(){
         if(usuario){
 
 
-            axios.get(
+            api.get(
                 `/productos/usuario/${usuario.id}`
             )
 
@@ -67,7 +67,7 @@ function MisProductos(){
         try{
 
 
-            await axios.delete(
+            await api.delete(
                 `/productos/${id}`
             );
 
