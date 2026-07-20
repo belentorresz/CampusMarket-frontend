@@ -25,7 +25,7 @@ function MisProductos(){
         if(usuario){
 
 
-            api.get(
+            axios.get(
                 `/productos/usuario/${usuario.id}`
             )
 
@@ -67,7 +67,7 @@ function MisProductos(){
         try{
 
 
-            await api.delete(
+            await axios.delete(
                 `/productos/${id}`
             );
 
