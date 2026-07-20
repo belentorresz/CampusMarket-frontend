@@ -5,263 +5,196 @@ import api from "../api/axios";
 import "../styles/cards.css";
 import "../styles/misProductos.css";
 
+function MisProductos() {
 
-function MisProductos(){
-
-
-    const [productos,setProductos] = useState([]);
+    const [productos, setProductos] = useState([]);
 
     const navigate = useNavigate();
 
+    useEffect(() => {
 
+        const usuario = JSON.parse(
+            localStorage.getItem("usuario")
+        );
 
-    useEffect(()=>{
+        if (usuario) {
 
+            api.get(`/productos/usuario/${usuario.id}`)
 
-        const usuario =
-            JSON.parse(localStorage.getItem("usuario"));
+                .then(res => {
 
+                    console.log("Productos:", res.data);
 
-        if(usuario){
+                    setProductos(
+                        Array.isArray(res.data)
+                            ? res.data
+                            : []
+                    );
 
+                })
 
-            axios.get(
-                `/productos/usuario/${usuario.id}`
-            )
+                .catch(error => {
 
-            .then(res=>{
+                    console.log(error);
 
-                setProductos(res.data);
-
-            })
-
-            .catch(error=>{
-
-                console.log(error);
-
-            });
-
+                });
 
         }
 
-
-    },[]);
-
+    }, []);
 
 
 
-    const eliminarProducto = async(id)=>{
 
+    const eliminarProducto = async (id) => {
 
-        const confirmar =
-            window.confirm(
-                "¿Eliminar producto?"
-            );
+        const confirmar = window.confirm(
+            "¿Eliminar producto?"
+        );
 
-
-        if(!confirmar)
+        if (!confirmar)
             return;
 
+        try {
 
-
-        try{
-
-
-            await axios.delete(
+            await api.delete(
                 `/productos/${id}`
             );
-
 
             setProductos(
 
                 productos.filter(
                     producto =>
-                    producto.id !== id
+                        producto.id !== id
                 )
 
             );
 
-
-        }catch(error){
+        } catch (error) {
 
             console.log(error);
 
         }
 
-
     };
 
 
 
-    return(
 
+    return (
 
         <div>
-
 
             <h1 className="titulo-pagina">
                 Mis publicaciones
             </h1>
 
-
             <button
-
                 className="perfil-btn-primary"
-
                 onClick={() => navigate("/publicar")}
-
-                >
-                    ➕ Publicar producto
+            >
+                ➕ Publicar producto
             </button>
-
 
 
             {
                 productos.length === 0 ?
 
+                    (
 
-                (
+                        <p>
+                            No tienes publicaciones todavía
+                        </p>
 
-                    <p>
-                        No tienes publicaciones todavía
-                    </p>
+                    )
 
-                )
+                    :
 
+                    (
 
-                :
+                        <div className="productos-grid">
 
+                            {
 
-                (
+                                productos.map(producto => (
 
-
-                <div className="productos-grid">
-
-
-                {
-                    productos.map(producto=>(
-
-
-                        <div
-                        className="producto-card"
-                        key={producto.id}
-                        >
-
-
-                            <div className="producto-imagen">
-
-
-                                <img
-
-                                    src={
-                                        producto.imagen
-                                        ?
-                                        `https://campusmarket-production-98d0.up.railway.app/uploads/productos/${producto.imagen}`
-                                        :
-                                        "https://via.placeholder.com/400"
-                                    }
-
-                                alt={producto.nombre}
-
-                                />
-
-
-                            </div>
-
-
-
-
-                            <div className="producto-info">
-
-
-                                <h3>
-                                    {producto.nombre}
-                                </h3>
-
-
-
-                                <p className="precio">
-
-                                    S/. {producto.precio}
-
-                                </p>
-
-
-
-                                <span className="estado">
-
-                                    {producto.estado}
-
-                                </span>
-
-
-
-                                <div className="acciones">
-
-
-                                    <button
-
-                                    className="btn-editar"
-
-                                    onClick={()=>
-                                        navigate(
-                                        `/editar-producto/${producto.id}`
-                                        )
-                                    }
-
+                                    <div
+                                        className="producto-card"
+                                        key={producto.id}
                                     >
 
-                                        Editar
+                                        <div className="producto-imagen">
 
-                                    </button>
+                                            <img
 
+                                                src={
+                                                    producto.imagen
+                                                        ?
+                                                        `https://campusmarket-production-98d0.up.railway.app/uploads/productos/${producto.imagen}`
+                                                        :
+                                                        "https://via.placeholder.com/400"
+                                                }
 
+                                                alt={producto.nombre}
 
+                                            />
 
-                                    <button
+                                        </div>
 
-                                    className="btn-eliminar"
+                                        <div className="producto-info">
 
-                                    onClick={()=>
-                                        eliminarProducto(producto.id)
-                                    }
+                                            <h3>
+                                                {producto.nombre}
+                                            </h3>
 
-                                    >
+                                            <p className="precio">
+                                                S/. {producto.precio}
+                                            </p>
 
-                                        Eliminar
+                                            <span className="estado">
+                                                {producto.estado}
+                                            </span>
 
-                                    </button>
+                                            <div className="acciones">
 
+                                                <button
+                                                    className="btn-editar"
+                                                    onClick={() =>
+                                                        navigate(`/editar-producto/${producto.id}`)
+                                                    }
+                                                >
+                                                    Editar
+                                                </button>
 
-                                </div>
+                                                <button
+                                                    className="btn-eliminar"
+                                                    onClick={() =>
+                                                        eliminarProducto(producto.id)
+                                                    }
+                                                >
+                                                    Eliminar
+                                                </button>
 
+                                            </div>
 
-                            </div>
+                                        </div>
 
+                                    </div>
+
+                                ))
+
+                            }
 
                         </div>
 
-
-                    ))
-                }
-
-
-                </div>
-
-
-                )
+                    )
 
             }
 
-
-
         </div>
-
 
     );
 
-
 }
-
 
 export default MisProductos;
