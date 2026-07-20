@@ -8,6 +8,7 @@ import "../../styles/perfil.css";
 function Perfil(){
 
     const { usuario, logout } = useContext(AuthContext);
+    console.log("USUARIO LOGIN:", usuario);
 
     const navigate = useNavigate();
 
@@ -109,7 +110,7 @@ return (
         usuario.foto ?
 
         <img
-            src={`http://localhost:8080/uploads/perfiles/${usuario.foto}`}
+            src={`https://campusmarket-production-98d0.up.railway.app/uploads/perfiles/${usuario.foto}`}
             alt="Perfil"
             className="perfil-imagen"
         />
