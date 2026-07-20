@@ -46,7 +46,7 @@ function Perfil(){
 
 
             await api.post(
-                `/usuarios/${usuario.id}/foto`,
+                `/api//usuarios/${usuario.id}/foto`,
                 formData,
                 {
                     headers:{

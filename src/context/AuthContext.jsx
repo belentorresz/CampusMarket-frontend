@@ -40,7 +40,7 @@ export function AuthProvider({children}){
 
 
             const respuesta =
-            await api.get("/usuarios/me");
+            await api.get("/api//usuarios/me");
 
 
             console.log("USUARIO /me:", respuesta.data);
