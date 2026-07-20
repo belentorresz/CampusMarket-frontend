@@ -63,9 +63,9 @@ function EditarPerfil(){
         try{
 
 
-            await axios.put(
+            await api.put(
 
-                `/api/usuarios/${usuario.id}`,
+                `/usuarios/${usuario.id}`,
 
                 usuario
 
