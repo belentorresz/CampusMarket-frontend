@@ -185,7 +185,7 @@ function Registro(){
 
             await api.post(
 
-                "/auth/register",
+                "/api/auth/register",
 
                 formulario
 
