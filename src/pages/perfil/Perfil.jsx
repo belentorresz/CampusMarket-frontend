@@ -58,6 +58,16 @@ function Perfil(){
 
             alert("Foto actualizada");
 
+
+            const respuesta = await api.get("/usuarios/me");
+
+
+            localStorage.setItem(
+                "usuario",
+                JSON.stringify(respuesta.data)
+            );
+
+
             window.location.reload();
 
 
