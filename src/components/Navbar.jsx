@@ -90,9 +90,9 @@ className="avatar"
 src={
 usuario.foto
 ?
-`http://localhost:8080/uploads/perfiles/${usuario.foto}`
+`https://campusmarket-production-98d0.up.railway.app/uploads/perfiles/${usuario.foto}`
 :
-"https://ui-avatars.com/api/?background=0d6163&color=fff&name="+usuario.nombre
+`https://ui-avatars.com/api/?background=0d6163&color=fff&name=${encodeURIComponent(usuario.nombre)}`
 }
 
 alt="perfil"

@@ -66,7 +66,7 @@ function EditarPerfil(){
 
             await axios.put(
 
-                `http://localhost:8080/api/usuarios/${usuario.id}`,
+                `/api/usuarios/${usuario.id}`,
 
                 usuario
 

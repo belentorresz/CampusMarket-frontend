@@ -134,7 +134,7 @@ return(
             src={
                 producto.imagen
                 ?
-                `http://localhost:8080/uploads/productos/${producto.imagen}`
+                `https://campusmarket-production-98d0.up.railway.app/uploads/productos/${producto.imagen}`
                 :
                 "https://via.placeholder.com/400"
             }

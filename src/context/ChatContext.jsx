@@ -23,7 +23,7 @@ export function ChatProvider({ children }) {
         const stomp = new Client({
 
             webSocketFactory: () =>
-                new SockJS("http://localhost:8080/ws"),
+            new SockJS("https://campusmarket-production-98d0.up.railway.app/ws"),
 
             reconnectDelay: 5000,
 

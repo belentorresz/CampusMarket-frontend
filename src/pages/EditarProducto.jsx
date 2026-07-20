@@ -23,7 +23,7 @@ function EditarProducto(){
 
 
         axios.get(
-            `http://localhost:8080/api/productos/${id}`
+            `/productos/${id}`
         )
         .then(res=>{
 
@@ -55,7 +55,7 @@ function EditarProducto(){
 
         await axios.put(
 
-            `http://localhost:8080/api/productos/${id}`,
+            `/productos/${id}`,
 
             producto
 
@@ -92,7 +92,7 @@ function EditarProducto(){
 
             await axios.post(
 
-                `http://localhost:8080/api/productos/${id}/imagen`,
+                `/productos/${id}/imagen`,
 
                 formData,
 
@@ -158,8 +158,10 @@ cerrar={()=>setNotificacion(null)}
             <img
                 src={
                     producto.imagen
-                    ? `http://localhost:8080/uploads/productos/${producto.imagen}`
-                    : "https://via.placeholder.com/400"
+                    ?
+                    `https://campusmarket-production-98d0.up.railway.app/uploads/productos/${producto.imagen}`
+                    :
+                    "https://via.placeholder.com/400"
                 }
                 alt={producto.nombre}
                 className="producto-preview-img"

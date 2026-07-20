@@ -110,7 +110,7 @@ function MisCompras(){
                             src={
                                 compra.producto.imagen
                                 ?
-                                `http://localhost:8080/uploads/productos/${compra.producto.imagen}`
+                                `https://campusmarket-production-98d0.up.railway.app/uploads/productos/${compra.producto.imagen}`
                                 :
                                 "https://via.placeholder.com/200"
                             }

@@ -26,7 +26,7 @@ function MisProductos(){
 
 
             axios.get(
-                `http://localhost:8080/api/productos/usuario/${usuario.id}`
+                `/productos/usuario/${usuario.id}`
             )
 
             .then(res=>{
@@ -68,7 +68,7 @@ function MisProductos(){
 
 
             await axios.delete(
-                `http://localhost:8080/api/productos/${id}`
+                `/productos/${id}`
             );
 
 
@@ -153,13 +153,13 @@ function MisProductos(){
 
                                 <img
 
-                                src={
-                                    producto.imagen
-                                    ?
-                                    `http://localhost:8080/uploads/productos/${producto.imagen}`
-                                    :
-                                    "https://via.placeholder.com/300"
-                                }
+                                    src={
+                                        producto.imagen
+                                        ?
+                                        `https://campusmarket-production-98d0.up.railway.app/uploads/productos/${producto.imagen}`
+                                        :
+                                        "https://via.placeholder.com/400"
+                                    }
 
                                 alt={producto.nombre}
 
